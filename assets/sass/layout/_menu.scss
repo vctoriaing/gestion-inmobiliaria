@@ -37,7 +37,7 @@
 			@include vendor('transform', 'translateY(0.5em)');
 			@include vendor('transition', ('opacity #{_duration(menu)} ease','transform #{_duration(menu)} ease'));
 			-webkit-overflow-scrolling: touch;
-			background: _palette(accent);
+			background: #D4B886;
 			border-radius: _size(border-radius);
 			display: block;
 			max-width: 100%;

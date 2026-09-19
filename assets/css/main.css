@@ -90,6 +90,940 @@ input, select, textarea {
 
 	}
 
+/* Carolina Sandoval landing page */
+
+	:root {
+		--carolina-navy: #0A1F3D;
+		--carolina-navy-soft: #173354;
+		--carolina-gold: #B59670;
+		--carolina-gold-light: #D8C4A5;
+		--carolina-cream: #F4EFE6;
+		--carolina-white: #fffdf8;
+	}
+
+	.landing-page {
+		background: var(--carolina-navy);
+		color: var(--carolina-navy);
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	}
+
+	.landing-page #page-wrapper {
+		background: var(--carolina-cream);
+	}
+
+	.landing-page h1,
+	.landing-page h2,
+	.landing-page h3,
+	.landing-page p {
+		letter-spacing: 0;
+	}
+
+	.landing-page h2,
+	.landing-page h3 {
+		font-family: Raleway, Helvetica, sans-serif;
+		font-weight: 700;
+	}
+
+	.site-header {
+		background: var(--carolina-navy) !important;
+		border-bottom: 1px solid rgba(181, 150, 112, 0.32);
+		padding: 1.15em 3em;
+	}
+
+	.site-header h1 a {
+		color: var(--carolina-white) !important;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.95em;
+		letter-spacing: 0.05em;
+		text-transform: none;
+	}
+
+	.site-header h1 span {
+		color: var(--carolina-gold-light);
+		display: block;
+		font-size: 0.55em;
+		font-weight: 300;
+		letter-spacing: 0.16em;
+		margin-top: 0.28em;
+		text-transform: uppercase;
+	}
+
+	.site-header nav a {
+		color: var(--carolina-white) !important;
+		font-size: 0.72em;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	#menu {
+		background: var(--carolina-navy);
+	}
+
+	#menu h2,
+	#menu .links a,
+	#menu .close {
+		color: var(--carolina-cream) !important;
+	}
+
+	#menu .links a:hover {
+		color: var(--carolina-gold-light) !important;
+	}
+
+	.hero-section {
+		background: var(--carolina-navy);
+		color: var(--carolina-white);
+		min-height: 37em;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.hero-section:after {
+		background: var(--carolina-gold);
+		bottom: -5em;
+		content: '';
+		height: 10em;
+		opacity: 0.9;
+		position: absolute;
+		right: -7em;
+		transform: rotate(-8deg);
+		width: 52%;
+	}
+
+	.hero-section__inner {
+		align-items: center;
+		display: flex;
+		gap: 5em;
+		margin: 0 auto;
+		max-width: 74em;
+		min-height: 37em;
+		padding: 6em 3em 7em;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero-section__content {
+		max-width: 38em;
+		width: 58%;
+	}
+
+	.eyebrow {
+		color: var(--carolina-gold);
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 0.18em !important;
+		margin-bottom: 1.5em;
+		text-transform: uppercase;
+	}
+
+	.hero-section h2 {
+		color: var(--carolina-white);
+		font-size: clamp(2.5em, 5vw, 4.6em);
+		line-height: 1.08;
+		margin-bottom: 0.35em;
+		max-width: 9em;
+	}
+
+	.hero-lead {
+		color: rgba(255, 253, 248, 0.78);
+		font-size: 1.2em;
+		line-height: 1.5;
+		max-width: 29em;
+	}
+
+	.hero-section__actions {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5em;
+		margin-top: 2.3em;
+	}
+
+	.landing-page .button.primary {
+		background: var(--carolina-gold);
+		border: 0;
+		box-shadow: none;
+		color: var(--carolina-navy) !important;
+		font-weight: 700;
+	}
+
+	.landing-page .button.primary:hover {
+		background: var(--carolina-gold-light);
+	}
+
+	.text-link {
+		border-bottom: 1px solid rgba(181, 150, 112, 0.55);
+		color: var(--carolina-gold) !important;
+		font-size: 0.85em;
+		font-weight: 600;
+		padding-bottom: 0.2em;
+	}
+
+	.text-link span {
+		font-size: 1.25em;
+		margin-left: 0.35em;
+	}
+
+	.hero-location {
+		color: rgba(255, 253, 248, 0.58);
+		font-size: 0.78em;
+		letter-spacing: 0.08em !important;
+		margin-top: 3em;
+		text-transform: uppercase;
+	}
+
+	.hero-section__portrait {
+		position: relative;
+		width: 42%;
+	}
+
+	.portrait-frame {
+		background: var(--carolina-cream);
+		border: 10px solid rgba(255, 253, 248, 0.9);
+		box-shadow: 1.5em 1.5em 0 rgba(181, 150, 112, 0.75);
+		margin: 0 auto;
+		max-width: 21em;
+		overflow: hidden;
+		transform: none;
+	}
+
+	.portrait-frame img {
+		display: block;
+		filter: saturate(0.9);
+		width: 100%;
+	}
+
+	.portrait-note {
+		background: var(--carolina-white);
+		bottom: -1em;
+		box-shadow: 0 0.8em 2em rgba(10, 31, 61, 0.18);
+		color: var(--carolina-navy);
+		display: flex;
+		flex-direction: column;
+		gap: 0.25em;
+		padding: 1em 1.2em;
+		position: absolute;
+		right: -1.5em;
+		width: 13em;
+	}
+
+	.portrait-note strong {
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.75em;
+		text-transform: uppercase;
+	}
+
+	.portrait-note span {
+		color: #536477;
+		font-size: 0.72em;
+	}
+
+	.content-section {
+		margin: 0 !important;
+		padding: 8em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.services-section,
+	.properties-section {
+		background: var(--carolina-cream);
+	}
+
+	.content-section__intro {
+		max-width: 40em;
+	}
+
+	.content-section__intro h2,
+	.process-section h2,
+	.contact-section h2 {
+		color: var(--carolina-navy);
+		font-size: clamp(2em, 3.5vw, 3.25em);
+		line-height: 1.1;
+		margin-bottom: 0.55em;
+	}
+
+	.content-section__intro > p:last-child,
+	.contact-section p:not(.eyebrow) {
+		color: #536477;
+		font-size: 1.05em;
+		line-height: 1.65;
+	}
+
+	.service-grid {
+		display: grid;
+		gap: 1px;
+		grid-template-columns: repeat(4, 1fr);
+		margin-top: 4em;
+	}
+
+	.service-card {
+		background: var(--carolina-white);
+		border-top: 3px solid var(--carolina-gold);
+		min-height: 14em;
+		padding: 1.8em 1.6em;
+	}
+
+	.service-card__number {
+		color: var(--carolina-gold);
+		display: block;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.75em;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		margin-bottom: 2.3em;
+	}
+
+	.service-card h3,
+	.process-step h3,
+	.property-card h3 {
+		color: var(--carolina-navy);
+		font-size: 1.05em;
+		line-height: 1.25;
+		margin-bottom: 0.8em;
+	}
+
+	.service-card p,
+	.process-step p,
+	.property-card p {
+		color: #536477;
+		font-size: 0.86em;
+		line-height: 1.55;
+	}
+
+	.metodologia-grid,
+	.propiedad-grid,
+	.testimonios-grid {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(3, 1fr);
+		margin-top: 4em;
+	}
+
+	.metodologia-card,
+	.propiedad-card,
+	.testimonio-card {
+		background: var(--carolina-white);
+		box-shadow: 0 0.7em 2em rgba(10, 31, 61, 0.08);
+	}
+
+	.metodologia-card {
+		border-top: 3px solid var(--carolina-gold);
+		padding: 2em 1.6em;
+	}
+
+	.metodologia-card__number {
+		color: var(--carolina-gold);
+		display: block;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.75em;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		margin-bottom: 2.3em;
+	}
+
+	.metodologia-card h3,
+	.testimonio-card__nombre {
+		color: var(--carolina-navy);
+		font-size: 1.05em;
+		margin-bottom: 0.7em;
+	}
+
+	.metodologia-card p,
+	.testimonio-card__frase {
+		color: #536477;
+		font-size: 0.9em;
+		line-height: 1.55;
+	}
+
+	.propiedad-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.propiedad-card {
+		overflow: hidden;
+	}
+
+	.propiedad-card__imagen {
+		display: block;
+		height: 15em;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.propiedad-card__contenido {
+		padding: 1.8em 1.6em 2em;
+	}
+
+	.propiedad-card__tipo {
+		color: var(--carolina-gold);
+		font-size: 0.68em;
+		font-weight: 700;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+	}
+
+	.propiedad-card__titulo {
+		color: var(--carolina-navy);
+		font-size: 1.35em;
+		margin: 0.65em 0;
+	}
+
+	.propiedad-card__caracteristicas {
+		color: #536477;
+		font-size: 0.86em;
+		line-height: 1.65;
+		margin: 0 0 1.5em;
+		padding-left: 1.2em;
+	}
+
+	.propiedad-card__boton,
+	.guias-banner__boton {
+		background: var(--carolina-gold);
+		color: var(--carolina-navy) !important;
+		font-size: 0.72em;
+		font-weight: 700;
+	}
+
+	.casos-exito-section {
+		background: var(--carolina-white);
+		padding: 8em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.casos-exito-section__intro {
+		max-width: 40em;
+	}
+
+	.casos-exito-section h2,
+	.guias-banner h2 {
+		color: var(--carolina-navy);
+		font-size: clamp(2em, 3.5vw, 3.25em);
+		line-height: 1.1;
+		margin-bottom: 0.55em;
+	}
+
+	.testimonio-card {
+		padding: 2.2em 0 1.6em;
+	}
+
+	.testimonio-card__icon {
+		color: var(--carolina-gold);
+		display: block;
+		font-size: 2.6em;
+		margin: 0 1.15em 0.7em;
+	}
+
+	.testimonio-card__nombre,
+	.testimonio-card__frase {
+		margin-left: 1.6em;
+		margin-right: 1.6em;
+	}
+
+	.testimonio-card__nombre {
+		margin-top: 1.3em;
+	}
+
+	.guias-banner {
+		background: var(--carolina-gold);
+		padding: 6em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.guias-banner__contenido {
+		max-width: 42em;
+	}
+
+	.guias-banner .eyebrow,
+	.guias-banner h2,
+	.guias-banner p {
+		color: var(--carolina-navy);
+	}
+
+	.guias-banner__boton {
+		background: var(--carolina-navy);
+		color: var(--carolina-white) !important;
+		margin-top: 1em;
+	}
+
+	.guia-inmobiliaria {
+		align-items: center;
+		background: var(--carolina-cream);
+		display: grid;
+		gap: 5em;
+		grid-template-columns: 0.9fr 1.1fr;
+		padding: 8em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.guia-inmobiliaria__imagen {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.guia-inmobiliaria__logo-panel {
+		background: var(--carolina-white);
+		box-shadow: 0 0.6em 1.5em rgba(10, 31, 61, 0.18);
+		padding: 2em;
+	}
+
+	.guia-inmobiliaria__logo {
+		display: block;
+		height: 18em;
+		object-fit: contain;
+		width: 18em;
+	}
+
+	.guia-inmobiliaria__contenido h2 {
+		color: var(--carolina-navy);
+		font-size: clamp(2em, 3.5vw, 3.25em);
+		line-height: 1.1;
+		margin-bottom: 1em;
+	}
+
+	.guia-inmobiliaria__acordeon details {
+		border-bottom: 1px solid rgba(10, 31, 61, 0.2);
+	}
+
+	.guia-inmobiliaria__acordeon summary {
+		color: var(--carolina-navy);
+		cursor: pointer;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.9em;
+		font-weight: 700;
+		list-style: none;
+		padding: 1.25em 2.5em 1.25em 0;
+		position: relative;
+	}
+
+	.guia-inmobiliaria__acordeon summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.guia-inmobiliaria__acordeon summary::after {
+		color: var(--carolina-gold);
+		content: '+';
+		font-size: 1.5em;
+		position: absolute;
+		right: 0;
+		top: 0.65em;
+	}
+
+	.guia-inmobiliaria__acordeon details[open] summary::after {
+		content: '-';
+	}
+
+	.guia-inmobiliaria__acordeon details p {
+		color: #536477;
+		font-size: 0.92em;
+		line-height: 1.6;
+		margin: 0 0 1.25em;
+		max-width: 38em;
+	}
+
+	.guia-lista {
+		color: #536477;
+		font-size: 0.9em;
+		line-height: 1.6;
+		margin: 0 0 1.5em;
+		padding-left: 1.25em;
+	}
+
+	.guia-lista li + li {
+		margin-top: 0.45em;
+	}
+
+	.guia-lista li::marker {
+		color: var(--carolina-navy);
+	}
+
+	.guia-lista strong {
+		color: var(--carolina-navy);
+		font-weight: 700;
+	}
+
+	.sobre-carolina {
+		align-items: center;
+		background: var(--carolina-white);
+		display: grid;
+		gap: 5em;
+		grid-template-columns: 0.9fr 1.1fr;
+		padding: 8em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.sobre-carolina__imagen {
+		margin: 0 auto;
+		max-width: 22em;
+		position: relative;
+		width: 100%;
+	}
+
+	.sobre-carolina__imagen > img:first-child {
+		display: block;
+		width: 100%;
+	}
+
+	.sobre-carolina__logo {
+		background: var(--carolina-white);
+		bottom: -1.5em;
+		box-shadow: 0 0.6em 1.5em rgba(10, 31, 61, 0.18);
+		height: 5em;
+		object-fit: contain;
+		padding: 0.6em;
+		position: absolute;
+		right: -1.5em;
+		width: 6.5em;
+	}
+
+	.sobre-carolina__contenido h2 {
+		color: var(--carolina-navy);
+		font-size: clamp(2em, 3.5vw, 3.25em);
+		line-height: 1.1;
+		margin-bottom: 0.45em;
+	}
+
+	.sobre-carolina__contenido > p:not(.eyebrow) {
+		color: #536477;
+		font-size: 1.05em;
+		line-height: 1.65;
+		max-width: 34em;
+	}
+
+	.sobre-carolina__cargo {
+		color: var(--carolina-navy) !important;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-weight: 700;
+	}
+
+	.sobre-carolina__boton {
+		background: var(--carolina-navy);
+		color: var(--carolina-white) !important;
+		margin-top: 1em;
+	}
+
+	.process-section {
+		background: var(--carolina-navy);
+		color: var(--carolina-white);
+		padding: 8em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.process-section__inner {
+		align-items: start;
+		display: grid;
+		gap: 7em;
+		grid-template-columns: 0.9fr 1.1fr;
+	}
+
+	.process-section h2 {
+		color: var(--carolina-white);
+	}
+
+	.process-list {
+		border-top: 1px solid rgba(255, 253, 248, 0.18);
+	}
+
+	.process-step {
+		border-bottom: 1px solid rgba(255, 253, 248, 0.18);
+		display: grid;
+		gap: 2em;
+		grid-template-columns: 3em 1fr;
+		padding: 1.6em 0;
+	}
+
+	.process-step > span {
+		color: var(--carolina-gold);
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.8em;
+		font-weight: 700;
+	}
+
+	.process-step h3 {
+		color: var(--carolina-white);
+		margin-bottom: 0.35em;
+	}
+
+	.process-step p {
+		color: rgba(255, 253, 248, 0.65);
+		margin: 0;
+	}
+
+	.property-grid {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 4em;
+	}
+
+	.property-card {
+		background: var(--carolina-white);
+		box-shadow: 0 0.7em 2em rgba(10, 31, 61, 0.08);
+		display: grid;
+		grid-template-columns: 45% 55%;
+	}
+
+	.property-card img {
+		height: 100%;
+		min-height: 15em;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.property-card > div {
+		padding: 2em 1.6em;
+	}
+
+	.property-card > div > span {
+		color: var(--carolina-gold);
+		font-size: 0.68em;
+		font-weight: 700;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+	}
+
+	.property-card h3 {
+		font-size: 1.35em;
+		margin-top: 0.8em;
+	}
+
+	.property-card .text-link {
+		display: inline-block;
+		font-size: 0.75em;
+		margin-top: 1.2em;
+	}
+
+	.statement-section {
+		background: var(--carolina-gold);
+		padding: 5.5em 2em;
+		text-align: center;
+	}
+
+	.statement-section p {
+		color: var(--carolina-navy);
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: clamp(1.7em, 3vw, 2.7em);
+		font-weight: 700;
+		line-height: 1.25;
+		margin: 0;
+	}
+
+	.contact-section {
+		align-items: center;
+		background: var(--carolina-cream);
+		display: grid;
+		gap: 5em;
+		grid-template-columns: 1fr auto;
+		padding: 7em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.contact-section h2 {
+		max-width: 12em;
+	}
+
+	.contact-section form > .fields > .field > label {
+		color: var(--carolina-navy);
+	}
+
+	.contact-section form input[type="checkbox"] + label {
+		color: var(--carolina-navy);
+	}
+
+	.contact-section form input[type="text"],
+	.contact-section form input[type="email"],
+	.contact-section form textarea {
+		color: var(--carolina-navy);
+	}
+
+	.contact-section__actions {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1.1em;
+	}
+
+	.contact-section__actions .button.primary {
+		color: var(--carolina-navy) !important;
+	}
+
+	.contact-socials {
+		align-items: center;
+		display: flex;
+		gap: 1.25em;
+		justify-content: center;
+	}
+
+	.contact-email {
+		border-bottom: 0;
+		color: var(--carolina-navy) !important;
+		font-size: 1.15em;
+		padding-bottom: 0;
+	}
+
+	.contact-email:hover {
+		color: var(--carolina-gold) !important;
+	}
+
+	.legal-checkbox-group a {
+		color: var(--carolina-navy) !important;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	.legal-checkbox-group a:hover {
+		color: var(--carolina-gold) !important;
+	}
+
+	.site-footer {
+		align-items: flex-start;
+		background: var(--carolina-navy);
+		border-top: 1px solid rgba(181, 150, 112, 0.35);
+		color: rgba(255, 253, 248, 0.65);
+		display: flex;
+		font-size: 0.72em;
+		justify-content: space-between;
+		padding: 2em max(3em, calc((100% - 68em) / 2));
+	}
+
+	.site-footer p {
+		margin: 0;
+		line-height: 1.8;
+	}
+
+	.footer-legal {
+		max-width: 48em;
+	}
+
+	.footer-contact {
+		min-width: 15em;
+	}
+
+	.site-footer__heading {
+		color: var(--carolina-white);
+		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 0.9em;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		margin-bottom: 0.7em !important;
+		text-transform: uppercase;
+	}
+
+	.footer-legal p {
+		text-align: justify;
+	}
+
+	.site-footer a {
+		color: var(--carolina-gold-light) !important;
+	}
+
+	.footer-links a {
+		display: inline-block;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		margin-right: 1.25em;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
+	.footer-links a:hover {
+		color: var(--carolina-white) !important;
+	}
+
+	@media screen and (max-width: 980px) {
+		.hero-section__inner { gap: 3em; }
+		.service-grid { grid-template-columns: repeat(2, 1fr); }
+		.metodologia-grid,
+		.testimonios-grid { grid-template-columns: repeat(2, 1fr); }
+		.guia-inmobiliaria { gap: 3em; }
+		.sobre-carolina { gap: 3em; }
+		.process-section__inner { gap: 3em; }
+	}
+
+	@media screen and (max-width: 736px) {
+		.site-header { padding: 1em 1.5em; }
+		.site-header h1 a { font-size: 0.78em; }
+		.hero-section { min-height: 0; }
+		.hero-section__inner { align-items: stretch; display: flex; flex-direction: column; min-height: 0; padding: 2.5em 1.5em 5em; }
+		.hero-section__portrait { margin: 0 auto 3.5em; max-width: 22em; order: -1; width: 100%; }
+		.hero-section__content { width: 100%; }
+		.portrait-frame { max-width: 100%; }
+		.portrait-note { right: 0; }
+		.hero-section h2 { font-size: 2.8em; }
+		.content-section, .process-section, .contact-section { padding: 5em 1.5em; }
+		.process-section__inner, .contact-section { display: block; }
+		.guia-inmobiliaria { display: block; padding: 5em 1.5em; }
+		.guia-inmobiliaria__contenido { margin-top: 4em; }
+		.sobre-carolina { display: block; padding: 5em 1.5em; }
+		.sobre-carolina__contenido { margin-top: 4em; }
+		.sobre-carolina__logo { right: 0; }
+		.guia-inmobiliaria__logo-panel { padding: 1.25em; }
+		.guia-inmobiliaria__logo { height: auto; max-width: 100%; width: 18em; }
+		.process-list { margin-top: 3em; }
+		.property-grid { grid-template-columns: 1fr; }
+		.propiedad-grid,
+		.metodologia-grid,
+		.testimonios-grid { grid-template-columns: 1fr; }
+		.contact-section__actions { margin-top: 2.5em; }
+		.site-footer { display: block; padding: 2em 1.5em; }
+		.site-footer p + p { margin-top: 0.7em; }
+		.footer-contact { margin-top: 2em; }
+	}
+
+	@media screen and (max-width: 480px) {
+		.service-grid { display: block; }
+		.service-card { min-height: 0; }
+		.property-card { display: block; }
+		.property-card img { height: 13em; min-height: 0; }
+		.propiedad-card__imagen { height: 13em; }
+		.hero-section__actions { align-items: flex-start; flex-direction: column; }
+		.hero-section:after { right: -16em; width: 100%; }
+	}
+
+	html,
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	img,
+	video,
+	iframe {
+		max-width: 100%;
+	}
+
+	.guia-inmobiliaria__contenido,
+	.guia-inmobiliaria__acordeon,
+	.guia-lista,
+	.contact-section > div {
+		min-width: 0;
+		max-width: 100%;
+	}
+
+	.guia-lista {
+		list-style: disc;
+		word-break: normal;
+		overflow-wrap: anywhere;
+	}
+
+	@media screen and (max-width: 736px) {
+		.contact-section {
+			grid-template-columns: 1fr;
+		}
+
+		.contact-section__actions {
+			align-items: center;
+			width: 100%;
+		}
+
+		.contact-section__actions .button.primary {
+			max-width: 100%;
+			text-align: center;
+			white-space: normal;
+		}
+
+		.guia-inmobiliaria__imagen,
+		.guia-inmobiliaria__logo-panel {
+			max-width: 100%;
+		}
+
+		.site-footer {
+			gap: 1.5em;
+		}
+	}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -2212,7 +3146,7 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #C9A24B;
+			border-color: #B59670;
 		}
 
 	select {
@@ -3828,19 +4762,19 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+						background-color: #45558d;
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
+							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+							box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+							box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
 				}
 
 			.wrapper.spotlight.style3 {
